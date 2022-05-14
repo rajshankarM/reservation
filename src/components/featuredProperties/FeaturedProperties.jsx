@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch"
 
 const FeaturedProperties = () => {
 
-  const { data, loading } = useFetch("/hotels?featured=true&limit=4");
+  const { data, loading } = useFetch("https://reservation-booking-app.herokuapp.com/api/hotels?featured=true&limit=4");
 
   return (
     <div className="fp">
